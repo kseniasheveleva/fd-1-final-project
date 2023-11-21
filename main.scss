@@ -1,0 +1,18 @@
+@use './src/global/fonts';
+@use './src/global/colors'
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: colors.$gray600;
+}
