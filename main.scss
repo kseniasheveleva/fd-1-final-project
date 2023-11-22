@@ -1,5 +1,5 @@
 @use './src/global/fonts';
-@use './src/global/colors'
+@use './src/global/mixins/base-font';
 
 
 * {
@@ -7,12 +7,9 @@
 }
 
 body {
-    font-family: 'Inter';
+    @include base-font.baseFont;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: -0.2px;
-    text-align: left;
-    color: colors.$gray600;
 }
