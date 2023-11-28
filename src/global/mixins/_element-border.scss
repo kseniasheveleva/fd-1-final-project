@@ -1,7 +1,7 @@
 @use '../colors';
 @use 'sass:map';
 
-@function getBorderValue($border) {
+@function getBorderValue($border, $key) {
     @if(map-get($border, $key)) {
         @return map-get($border, $key)
     }
