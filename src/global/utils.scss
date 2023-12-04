@@ -1,25 +1,32 @@
 .border-top-none {
     border-top: none;
+
     &:focus {
         border-top: none;
     }
 }
-.border-right-none {
-    border-right: none;
-    &:focus {
-        border-right: none;
-    }
-}
+
 .border-bottom-none {
     border-bottom: none;
+
     &:focus {
         border-bottom: none;
     }
 }
+
 .border-left-none {
     border-left: none;
+
     &:focus {
         border-left: none;
+    }
+}
+
+.border-right-none {
+    border-right: none;
+
+    &:focus {
+        border-right: none;
     }
 }
 
@@ -27,3 +34,27 @@
     height: 100%;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w300 {
+    width: 300px;
+}

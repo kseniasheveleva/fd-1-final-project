@@ -1,4 +1,4 @@
-@use '../../global/break-points';
+@use '../../global/breakpoints';
 
 $columnsCount: 12;
 
@@ -32,7 +32,7 @@ $columnsCount: 12;
     }
 }
 
-@each $key, $value in break-points.$breakpoints {
+@each $key, $value in breakpoints.$breakpoints {
     @media screen and (min-width: $value) {
         @for $i from 1 through $columnsCount {
             .col-#{$key}-#{$i} {
