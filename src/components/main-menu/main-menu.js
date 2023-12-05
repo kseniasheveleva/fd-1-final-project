@@ -6,6 +6,7 @@ const currencyActive = document.querySelector('.main-menu__currency-item--active
 const shipList = document.querySelector('.main-menu__ship-list');
 const shipActive = document.querySelector('.main-menu__ship-option-img--active');
 
+
 const onChangeCurrency = (evt) => {
     if (evt.target.closest('.main-menu__currency-item')) {
         const [language] = currencyActive.textContent.split(',')
@@ -21,5 +22,7 @@ const onChangeShipTo = (evt) => {
     }
 }
 
+
 currencyList.addEventListener('click', onChangeCurrency)
 shipList.addEventListener('click', onChangeShipTo)
+
