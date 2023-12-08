@@ -16,18 +16,16 @@ const toggleDropdown = (evt) => {
 
     if (dropdownElement) {
         const dropdownMenu = dropdownElement.querySelector('.dropdown__menu');
+        hideAllActiveMenus(dropdownMenu)
         dropdownMenu.classList.toggle('dropdown__menu--active');
     }
 
     if (dropdownMenuElement) {
-        dropdownMenuElement.classList.remove('dropdown__menu--active');
+        dropdownMenuElement.classList.remove('dropdown__menu--active')
     }
 
     if (!dropdownElement) {
-        const allItems = document.querySelector('.dropdown__menu--active');
-        allItems.forEach((el) => {
-            el.classList.remove('dropdown__menu--active')
-        })
+        hideAllActiveMenus()
     }
 }
 

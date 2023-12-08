@@ -1,25 +1,28 @@
-import './side-nav.scss';
+import './side-nav.scss'
 
-const sideNavTrigger = document.querySelector('.side-nav-trigger');
+const sidenavTrigger = document.querySelector('.sidenav-trigger');
+
 const sideNav = document.querySelector('.side-nav');
 const overlay = document.querySelector('.side-nav__overlay');
+const closeIcon = document.querySelector('.side-nav__close-icon');
 
-const KEYBOARD_KEY = {
+const KEYBOARD_KEYS = {
     escape: 'Escape'
 }
 
-const toggleSideNav = (evt) => {
+const openSideNav = (evt) => {
     evt.preventDefault();
-    sideNav.classList.toggle('side-nav--active')
+    sideNav.classList.add('side-nav--active')
 }
 
 const closeSideNav = (evt) => {
-    if (evt.code === KEYBOARD_KEY.escape || !evt.code) {
+    if (evt.code === KEYBOARD_KEYS.escape || !evt.code) {
         sideNav.classList.remove('side-nav--active')
     }
 }
 
 
-sideNavTrigger.addEventListener('click', toggleSideNav);
+sidenavTrigger.addEventListener('click', openSideNav);
 overlay.addEventListener('click', closeSideNav);
-KEYBOARD_KEY.addEventListener('keydown', closeSideNav);
+closeIcon.addEventListener('click', closeSideNav);
+window.addEventListener('keydown', closeSideNav)

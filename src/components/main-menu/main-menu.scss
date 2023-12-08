@@ -24,14 +24,7 @@
             display: flex;
             align-items: center;
 
-            &::before {
-                content: '';
-                margin-right: 6px;
-                display: block;
-                width: 24px;
-                height: 24px;
-                background-image: url('/images/icons/control/menu.svg');
-            }
+
         }
 
         &:hover {

@@ -1,5 +1,7 @@
 //node_modules packages
 import 'reset-css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import 'swiper/css';
 
 // Global Styles
 import './main.scss'
@@ -14,6 +16,7 @@ import './src/components/app-header/app-header.js';
 import './src/components/main-menu/main-menu.js';
 import './src/components/app-logo/app-logo.js';
 import './src/components/dropdown/dropdown.js';
-import './src/components/side-nav/side-nav.js';
+import './src/components/side-nav/side-nav.js'
+import './src/components/popular-products/popular-products.js'
 
-import './src/global/utils.scss';
+import './src/global/util-classes.scss';

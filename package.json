@@ -13,6 +13,8 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "reset-css": "^5.0.2"
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "reset-css": "^5.0.2",
+    "swiper": "^11.0.5"
   }
 }
