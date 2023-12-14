@@ -1,0 +1,38 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.discount-products {
+    display: flex;
+    &-card {
+        width: 179px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 19px 17px 20px;
+        border-left: 1px solid colors.$gray300;
+        border-right: 1px solid colors.$gray300;
+
+        img {
+            width: 140px;
+            height: 140px;
+        }
+
+        p {
+            margin-top: 11px;
+        }
+
+        &__discount {
+            height: 28px;
+            border-radius: 29px;
+            background-color: colors.$red100;
+            color: colors.$red700;
+            padding: 0 13px;
+            margin-top: 7px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.2px;
+        }
+    }
+}
