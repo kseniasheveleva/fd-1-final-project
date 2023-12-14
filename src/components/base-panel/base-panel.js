@@ -1,1 +1,1 @@
-import './base-panel.scss';
+import './base-panel.scss'

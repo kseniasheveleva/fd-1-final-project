@@ -1,1 +1,1 @@
-import './discount-products.scss';
+import './discount-products.scss'
