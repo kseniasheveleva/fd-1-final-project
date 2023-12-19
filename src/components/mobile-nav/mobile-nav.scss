@@ -1,0 +1,21 @@
+@use '../../global/colors';
+
+.mobile-header {
+    &__nav {
+        display: flex;
+        grid-column-gap: 3px;
+        overflow-x: auto;
+    }
+
+    &__item {
+        padding: 9px 10px;
+        background-color: colors.$gray200;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: colors.$primary;
+        white-space: nowrap;
+    }
+
+}
